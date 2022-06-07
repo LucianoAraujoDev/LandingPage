@@ -280,6 +280,81 @@ header label{
     color: tomato;
 }
 
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.contato .image{
+    flex: 1 1 40rem;
+}
+
+.contato .image img{
+    width: 100%;
+    padding: 2rem;
+}
+
+.contato form{
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background: #fff;
+}
+
+.contato form .heading{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+.contato form .inputBox{
+    position: relative;
+}
+
+.contato form .inputBox input, .contato form .inputBox textarea{
+    width: 100%;
+    background: none;
+    color: #666;
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    text-transform: none;
+}
+
+.contato form .inputBox textarea{
+    resize: none;
+    height: 13rem;
+}
+
+.contato form .inputBox label{
+    position: absolute;
+    top: 1.7rem; left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    transition: .2s linear;
+}
+
+.contato form .inputBox input:focus ~ label,
+.contato form .inputBox input:valid ~ label,
+.contato form .inputBox textarea:focus ~ label,
+.contato form .inputBox textarea:valid ~ label{
+    top: -.5rem;
+    font-size: 1.5rem;
+    color: var(--rosa);
+}
+
+
+
+
+
+
+
 
 /*media queries */
 @media (max-width:1200px){
